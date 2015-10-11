@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h2>Удаление блюда</h2>
+    <form method="post" action="">
+        <input type="hidden" value="@ViewBag.DishID" name="DishID" />
+        <table>
+            <tr><td><input type="submit" value="Да" /> </td></tr>
+        </table>
+    </form>
+</div>
+

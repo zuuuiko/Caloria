@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Dishes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h2>Блюда</h2>
+    <table>
+            
+        @foreach (var d in ViewBag.Dishes)
+        {
+        <tr>
+            <td><p>@d.DishName</p></td>
+            <td><p><a href="/Dishes/Edit/@d.DishID">Изменить</a></p></td>
+            <td><p><a href="/Dishes/Delete/@d.DishID">Удалить</a></p></td>
+        </tr>
+        }
+    </table>
+    <p><a href="/Dishes/Create/">Создать новое блюдо</a></p></td>
+</div>
+
+
+
