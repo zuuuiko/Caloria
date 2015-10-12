@@ -8,7 +8,7 @@ namespace Calorie.Models
     public partial class CalorieModel : DbContext
     {
         public CalorieModel()
-            : base("name=CalorieModelContext")
+            : base("CalorieDB")
         {
         }
 

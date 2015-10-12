@@ -52,6 +52,7 @@ namespace Calorie.Controllers
         }
 
         // GET: Dishes/Edit/5
+        [HttpGet]
         public ActionResult Edit(int id)
         {
             return View();
