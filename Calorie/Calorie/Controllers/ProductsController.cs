@@ -62,6 +62,7 @@ namespace Calorie.Controllers
         [HttpGet]
         public ActionResult Edit(int? id)
         {
+            ViewBag.ProductID = id;
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

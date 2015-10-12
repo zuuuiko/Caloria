@@ -100,7 +100,10 @@ namespace Calorie.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            cm.Dispose();
+            if (disposing)
+            {
+                cm.Dispose();
+            }
             base.Dispose(disposing);
         }
     }
