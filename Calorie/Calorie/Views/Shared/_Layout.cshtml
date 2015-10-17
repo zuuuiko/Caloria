@@ -2,15 +2,17 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Калория</title>
+    <title>C A L O R I A</title>
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <nav>
         <ul class="menu">
-            <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+            <li>@Html.ActionLink("Головна", "Index", "Home")</li>
             <li>@Html.ActionLink("Блюда", "Index", "Dishes")</li>
+            <li>@Html.ActionLink("Продукти", "Index", "Products")</li>
+            <li>@Html.ActionLink("Історія споживання", "Index", "PersonEatStories")</li>
         </ul>
     </nav>
     @RenderBody()
